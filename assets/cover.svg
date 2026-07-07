@@ -1,0 +1,310 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1412" width="1000" height="1412" font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC','Malgun Gothic',sans-serif">
+  <defs>
+    <linearGradient id="rBg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#0a0f1f"/>
+      <stop offset="0.5" stop-color="#160e2e"/>
+      <stop offset="1" stop-color="#0a2b30"/>
+    </linearGradient>
+    <linearGradient id="rTitle" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="0.45" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <linearGradient id="rFloor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+    <radialGradient id="rHalo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rHorizon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5eead4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="rGlow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="rGlowSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="rScan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.03"/>
+    </pattern>
+    <!-- pixel sparkle -->
+    <g id="r-spark" fill="#f472b6">
+      <rect x="3" y="0" width="1" height="2"/>
+      <rect x="2" y="2" width="3" height="1"/>
+      <rect x="0" y="3" width="7" height="1"/>
+      <rect x="2" y="4" width="3" height="1"/>
+      <rect x="3" y="5" width="1" height="2"/>
+      <rect x="3" y="3" width="1" height="1" fill="#fff1e8"/>
+    </g>
+    <g id="px-gomi">
+      <rect x="5" y="1" width="2" height="1" fill="#6e3f1c"/>
+      <rect x="11" y="1" width="2" height="1" fill="#6e3f1c"/>
+      <rect x="4" y="2" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="5" y="2" width="2" height="1" fill="#c8803a"/>
+      <rect x="7" y="2" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="10" y="2" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="11" y="2" width="2" height="1" fill="#c8803a"/>
+      <rect x="13" y="2" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="3" y="3" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="4" y="3" width="3" height="1" fill="#c8803a"/>
+      <rect x="7" y="3" width="4" height="1" fill="#6e3f1c"/>
+      <rect x="11" y="3" width="3" height="1" fill="#c8803a"/>
+      <rect x="14" y="3" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="4" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="3" y="4" width="12" height="1" fill="#c8803a"/>
+      <rect x="15" y="4" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="5" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="3" y="5" width="1" height="1" fill="#c8803a"/>
+      <rect x="4" y="5" width="2" height="1" fill="#f0d29a"/>
+      <rect x="6" y="5" width="6" height="1" fill="#c8803a"/>
+      <rect x="12" y="5" width="2" height="1" fill="#f0d29a"/>
+      <rect x="14" y="5" width="1" height="1" fill="#c8803a"/>
+      <rect x="15" y="5" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="1" y="6" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="6" width="2" height="1" fill="#c8803a"/>
+      <rect x="4" y="6" width="2" height="1" fill="#f0d29a"/>
+      <rect x="6" y="6" width="6" height="1" fill="#c8803a"/>
+      <rect x="12" y="6" width="2" height="1" fill="#f0d29a"/>
+      <rect x="14" y="6" width="2" height="1" fill="#c8803a"/>
+      <rect x="16" y="6" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="1" y="7" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="7" width="14" height="1" fill="#c8803a"/>
+      <rect x="16" y="7" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="1" y="8" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="8" width="2" height="1" fill="#c8803a"/>
+      <rect x="4" y="8" width="3" height="1" fill="#140c0c"/>
+      <rect x="7" y="8" width="4" height="1" fill="#c8803a"/>
+      <rect x="11" y="8" width="3" height="1" fill="#140c0c"/>
+      <rect x="14" y="8" width="2" height="1" fill="#c8803a"/>
+      <rect x="16" y="8" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="1" y="9" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="9" width="14" height="1" fill="#c8803a"/>
+      <rect x="16" y="9" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="1" y="10" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="10" width="5" height="1" fill="#c8803a"/>
+      <rect x="7" y="10" width="4" height="1" fill="#140c0c"/>
+      <rect x="11" y="10" width="5" height="1" fill="#c8803a"/>
+      <rect x="16" y="10" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="11" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="3" y="11" width="4" height="1" fill="#c8803a"/>
+      <rect x="7" y="11" width="4" height="1" fill="#ee8090"/>
+      <rect x="11" y="11" width="4" height="1" fill="#c8803a"/>
+      <rect x="15" y="11" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="2" y="12" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="3" y="12" width="5" height="1" fill="#c8803a"/>
+      <rect x="8" y="12" width="2" height="1" fill="#ee8090"/>
+      <rect x="10" y="12" width="5" height="1" fill="#c8803a"/>
+      <rect x="15" y="12" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="3" y="13" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="4" y="13" width="10" height="1" fill="#c8803a"/>
+      <rect x="14" y="13" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="4" y="14" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="5" y="14" width="8" height="1" fill="#c8803a"/>
+      <rect x="13" y="14" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="3" y="15" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="4" y="15" width="2" height="1" fill="#c8803a"/>
+      <rect x="6" y="15" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="9" y="15" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="10" y="15" width="2" height="1" fill="#c8803a"/>
+      <rect x="12" y="15" width="1" height="1" fill="#6e3f1c"/>
+      <rect x="3" y="16" width="2" height="1" fill="#6e3f1c"/>
+      <rect x="11" y="16" width="2" height="1" fill="#6e3f1c"/>
+    </g>
+    <g id="px-ggong">
+      <rect x="3" y="1" width="2" height="1" fill="#a8a8bc"/>
+      <rect x="13" y="1" width="2" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="2" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="3" y="2" width="2" height="1" fill="#ffffff"/>
+      <rect x="5" y="2" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="12" y="2" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="13" y="2" width="2" height="1" fill="#ffffff"/>
+      <rect x="15" y="2" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="3" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="3" y="3" width="2" height="1" fill="#ffffff"/>
+      <rect x="5" y="3" width="8" height="1" fill="#a8a8bc"/>
+      <rect x="13" y="3" width="2" height="1" fill="#ffffff"/>
+      <rect x="15" y="3" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="4" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="4" width="14" height="1" fill="#ffffff"/>
+      <rect x="16" y="4" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="5" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="5" width="1" height="1" fill="#ffffff"/>
+      <rect x="3" y="5" width="1" height="1" fill="#dadae8"/>
+      <rect x="4" y="5" width="10" height="1" fill="#ffffff"/>
+      <rect x="14" y="5" width="1" height="1" fill="#dadae8"/>
+      <rect x="15" y="5" width="1" height="1" fill="#ffffff"/>
+      <rect x="16" y="5" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="6" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="6" width="14" height="1" fill="#ffffff"/>
+      <rect x="16" y="6" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="0" y="7" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="7" width="3" height="1" fill="#ffffff"/>
+      <rect x="4" y="7" width="2" height="1" fill="#140c0c"/>
+      <rect x="6" y="7" width="6" height="1" fill="#ffffff"/>
+      <rect x="12" y="7" width="2" height="1" fill="#140c0c"/>
+      <rect x="14" y="7" width="3" height="1" fill="#ffffff"/>
+      <rect x="17" y="7" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="0" y="8" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="8" width="16" height="1" fill="#ffffff"/>
+      <rect x="17" y="8" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="0" y="9" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="9" width="7" height="1" fill="#ffffff"/>
+      <rect x="8" y="9" width="2" height="1" fill="#e89aa8"/>
+      <rect x="10" y="9" width="7" height="1" fill="#ffffff"/>
+      <rect x="17" y="9" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="0" y="10" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="10" width="5" height="1" fill="#ffffff"/>
+      <rect x="6" y="10" width="1" height="1" fill="#dadae8"/>
+      <rect x="7" y="10" width="4" height="1" fill="#ffffff"/>
+      <rect x="11" y="10" width="1" height="1" fill="#dadae8"/>
+      <rect x="12" y="10" width="5" height="1" fill="#ffffff"/>
+      <rect x="17" y="10" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="11" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="11" width="14" height="1" fill="#ffffff"/>
+      <rect x="16" y="11" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="1" y="12" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="12" width="14" height="1" fill="#ffffff"/>
+      <rect x="16" y="12" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="13" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="3" y="13" width="12" height="1" fill="#ffffff"/>
+      <rect x="15" y="13" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="2" y="14" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="3" y="14" width="12" height="1" fill="#ffffff"/>
+      <rect x="15" y="14" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="3" y="15" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="4" y="15" width="2" height="1" fill="#ffffff"/>
+      <rect x="6" y="15" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="9" y="15" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="10" y="15" width="2" height="1" fill="#ffffff"/>
+      <rect x="12" y="15" width="1" height="1" fill="#a8a8bc"/>
+      <rect x="3" y="16" width="2" height="1" fill="#a8a8bc"/>
+      <rect x="11" y="16" width="2" height="1" fill="#a8a8bc"/>
+    </g>
+  </defs>
+
+  <g transform="scale(1,0.94133)">
+
+  <!-- background -->
+  <rect width="1000" height="1500" fill="url(#rBg)"/>
+  <ellipse cx="620" cy="290" rx="540" ry="430" fill="url(#rHalo)"/>
+
+  <!-- workflow network (top) with pixel accents -->
+  <g opacity="0.8">
+    <g stroke="#38bdf8" stroke-width="1.6" opacity="0.42" fill="none">
+      <path d="M720,250 L560,170"/><path d="M720,250 L840,190"/>
+      <path d="M720,250 L660,360"/><path d="M720,250 L860,330"/>
+      <path d="M720,250 L900,250"/><path d="M560,170 L680,110"/>
+      <path d="M660,360 L540,300"/><path d="M660,360 L620,470"/>
+      <path d="M840,190 L900,250"/><path d="M860,330 L780,430"/>
+      <path d="M540,300 L420,250"/><path d="M420,250 L300,300"/>
+      <path d="M300,300 L200,230"/><path d="M200,230 L150,330"/>
+    </g>
+    <!-- round nodes -->
+    <g fill="#5eead4">
+      <circle cx="840" cy="190" r="6"/><circle cx="860" cy="330" r="6"/>
+      <circle cx="900" cy="250" r="5"/><circle cx="680" cy="110" r="5"/>
+      <circle cx="620" cy="470" r="6"/><circle cx="300" cy="300" r="6"/>
+      <circle cx="150" cy="330" r="4"/>
+    </g>
+    <!-- pixel (square) nodes -->
+    <g fill="#f472b6">
+      <rect x="554" y="164" width="12" height="12"/>
+      <rect x="654" y="354" width="12" height="12"/>
+      <rect x="534" y="294" width="12" height="12"/>
+      <rect x="775" y="425" width="10" height="10"/>
+      <rect x="415" y="245" width="10" height="10"/>
+      <rect x="196" y="226" width="9" height="9"/>
+    </g>
+    <!-- hub: pixel diamond -->
+    <g filter="url(#rGlow)">
+      <rect x="704" y="234" width="32" height="32" transform="rotate(45 720 250)" fill="#0e2233" stroke="#5eead4" stroke-width="3"/>
+    </g>
+    <rect x="713" y="243" width="14" height="14" transform="rotate(45 720 250)" fill="#f472b6"/>
+    <!-- pixel sparkles -->
+    <use href="#r-spark" transform="translate(470,150) scale(6)" filter="url(#rGlowSoft)"/>
+    <use href="#r-spark" transform="translate(905,360) scale(5)"/>
+  </g>
+
+  <!-- accent tick + caption -->
+  <rect x="472" y="540" width="56" height="4" fill="#5eead4"/>
+  <text x="500" y="590" text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="22" letter-spacing="8" fill="#5eead4" filter="url(#rGlowSoft)">GAME DESIGN × AI WORKFLOW</text>
+
+  <!-- title -->
+  <text x="500" y="680" text-anchor="middle" font-size="50" font-weight="300" fill="#e2e8f0" letter-spacing="1">游戏策划实务即用的</text>
+  <text x="500" y="782" text-anchor="middle" font-size="80" font-weight="800" fill="url(#rTitle)" filter="url(#rGlowSoft)">AI · Claude Code 活用法</text>
+
+  <!-- divider -->
+  <line x1="360" y1="844" x2="640" y2="844" stroke="#3a3358" stroke-width="2"/>
+  <circle cx="500" cy="844" r="5" fill="#f472b6"/>
+
+  <!-- subtitle -->
+  <text x="500" y="912" text-anchor="middle" font-size="36" font-weight="600" fill="#fbbf24">没有一个数字是编造的</text>
+  <text x="500" y="960" text-anchor="middle" font-size="21" fill="#94a3b8">六个月的 AI 工作流 —— 提示词·代码·验证 全部公开</text>
+
+  <!-- stat chips -->
+  <g text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="22" font-weight="600">
+    <rect x="300" y="1038" width="130" height="52" fill="none" stroke="#2dd4bf" stroke-width="2" opacity="0.8"/>
+    <text x="365" y="1071" fill="#5eead4">304 atoms</text>
+    <rect x="445" y="1038" width="110" height="52" fill="none" stroke="#f472b6" stroke-width="2" opacity="0.8"/>
+    <text x="500" y="1071" fill="#f9a8d4">48 skills</text>
+    <rect x="570" y="1038" width="130" height="52" fill="none" stroke="#2dd4bf" stroke-width="2" opacity="0.8"/>
+    <text x="635" y="1071" fill="#5eead4">85 chapters</text>
+  </g>
+
+  <!-- ===== retro perspective floor ===== -->
+  <!-- horizon glow -->
+  <ellipse cx="500" cy="1150" rx="430" ry="44" fill="url(#rHorizon)"/>
+  <rect x="120" y="1148" width="760" height="2" fill="#5eead4" opacity="0.7" filter="url(#rGlowSoft)"/>
+  <g opacity="0.5">
+    <!-- vertical lines converging to VP(500,1150) -->
+    <g stroke="url(#rFloor)" stroke-width="1.5" fill="none" opacity="0.55">
+      <path d="M-180,1380 L500,1150"/><path d="M-40,1380 L500,1150"/>
+      <path d="M110,1380 L500,1150"/><path d="M250,1380 L500,1150"/>
+      <path d="M375,1380 L500,1150"/><path d="M500,1380 L500,1150"/>
+      <path d="M625,1380 L500,1150"/><path d="M750,1380 L500,1150"/>
+      <path d="M890,1380 L500,1150"/><path d="M1040,1380 L500,1150"/>
+      <path d="M1180,1380 L500,1150"/>
+    </g>
+    <!-- horizontal lines, spacing widens downward -->
+    <g stroke="#38bdf8" stroke-width="1.5" opacity="0.5">
+      <line x1="350" y1="1168" x2="650" y2="1168"/>
+      <line x1="305" y1="1196" x2="695" y2="1196"/>
+      <line x1="245" y1="1236" x2="755" y2="1236"/>
+      <line x1="165" y1="1292" x2="835" y2="1292"/>
+      <line x1="60" y1="1362" x2="940" y2="1362"/>
+    </g>
+  </g>
+  <!-- fade floor into bg at very bottom for footer legibility -->
+  <rect x="0" y="1370" width="1000" height="130" fill="#0a2b30" opacity="0.85"/>
+
+  <!-- footer (좌하단 스택 — 하단 중앙우측 x≈44~70%는 부크크 BOOKK 스탬프 자리라 비움, 실측 2026-06-10) -->
+  <text x="120" y="1404" font-size="30" font-weight="600" fill="#e2e8f0">李旼洙</text>
+  <text x="120" y="1446" font-family="Consolas,Menlo,monospace" font-size="17" letter-spacing="1.2" fill="#7dd3fc">DESIGN DIRECTOR · 24Y · 2026</text>
+
+  <!-- 고미 & 꽁지 — synthwave 도로 위 마스코트 -->
+  <g>
+    <ellipse cx="430" cy="1294" rx="50" ry="10" fill="#000000" opacity="0.34"/>
+    <ellipse cx="570" cy="1294" rx="50" ry="10" fill="#000000" opacity="0.34"/>
+  </g>
+  <g shape-rendering="crispEdges">
+    <use href="#px-gomi" transform="translate(379,1184) scale(5.7)"/>
+    <use href="#px-ggong" transform="translate(519,1184) scale(5.7)"/>
+  </g>
+  <!-- 작은 하트 (둘 사이) -->
+  <g shape-rendering="crispEdges" fill="#f472b6" transform="translate(489,1150) scale(3.4)">
+    <rect x="1" y="0" width="2" height="1"/><rect x="4" y="0" width="2" height="1"/>
+    <rect x="0" y="1" width="7" height="2"/><rect x="1" y="3" width="5" height="1"/>
+    <rect x="2" y="4" width="3" height="1"/><rect x="3" y="5" width="1" height="1"/>
+  </g>
+
+  <!-- CRT scanlines overlay -->
+  <rect width="1000" height="1500" fill="url(#rScan)"/>
+  </g>
+</svg>
