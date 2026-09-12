@@ -5,6 +5,8 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](LICENSE)
 [![Korean Original](https://img.shields.io/badge/原书-%ED%95%9C%EA%B5%AD%EC%96%B4%ED%8C%90%20(Korean)-blue.svg)](https://github.com/eremes81/game-design-ai-practice)
 [![Print Edition (KR)](https://img.shields.io/badge/BOOKK-纸质版%20(韩语)-orange.svg)](https://bookk.co.kr/bookStore/6a298be0ff49b1a6034c7703)
+[![E-book (KR EPUB)](https://img.shields.io/badge/uPaper-EPUB%20(%E9%9F%A9%E8%AF%AD)-6f42c1.svg)](https://eremes.upaper.kr/content/1217657)
+[![WikiDocs (KR)](https://img.shields.io/badge/WikiDocs-%E5%9C%A8%E7%BA%BF%E5%85%8D%E8%B4%B9%E9%98%85%E8%AF%BB%20(%E9%9F%A9%E8%AF%AD)-1f8b4c.svg)](https://wikidocs.net/book/20216)
 
 **🌐 各语言版本：** [한국어 — 原书](https://github.com/eremes81/game-design-ai-practice) · [English](https://github.com/eremes81/game-design-ai-practice-en) · [日本語](https://github.com/eremes81/game-design-ai-practice-ja) · [ไทย](https://github.com/eremes81/game-design-ai-practice-th) · [Bahasa Indonesia](https://github.com/eremes81/game-design-ai-practice-id) · **简体中文** · [繁體中文](https://github.com/eremes81/game-design-ai-practice-zh-hant)
 
