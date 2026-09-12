@@ -10,6 +10,11 @@
 
 **🌐 各语言版本：** [한국어 — 原书](https://github.com/eremes81/game-design-ai-practice) · [English](https://github.com/eremes81/game-design-ai-practice-en) · [日本語](https://github.com/eremes81/game-design-ai-practice-ja) · [ไทย](https://github.com/eremes81/game-design-ai-practice-th) · [Bahasa Indonesia](https://github.com/eremes81/game-design-ai-practice-id) · **简体中文** · [繁體中文](https://github.com/eremes81/game-design-ai-practice-zh-hant)
 
+> 🧰 **配套工具 — [Harness Starter Kit（骨架工具包）](https://github.com/eremes81/harness-starter-kit)**
+> 把本书 1.3（记忆·权限·设置）、第21部分（自我改进）、第24部分（运营）中搭建的**记忆、钩子与复盘结构**打包成可直接运行的最小构成，下载整个文件夹用 AI 代理打开即可。
+> 它原本是作者另一本书（面向一般职场）的附录，但骨架与这里讲的是同一套。MIT 许可。
+
+
 <img src="assets/cover.svg" alt="封面" width="320">
 
 这是一位在游戏行业深耕 24 年的策划总监所写的实战手册，讲的是如何把生成式 AI（Claude Code）真正带进**每天的制作工作**。不是理论，也不是预测——它一次只推进一项任务，从最初的那块屏幕（安装、账号、计费）开始，一路走过系统设计、战斗、叙事、关卡设计、数值平衡、UX，直到长期运营，再到把会议记录变成决策、用验证关卡守住质量、成本管理与版权。
