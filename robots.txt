@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eremes81.github.io/game-design-ai-practice-zh-hans/sitemap.xml
