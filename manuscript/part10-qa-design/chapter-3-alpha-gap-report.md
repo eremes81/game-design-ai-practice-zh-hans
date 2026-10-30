@@ -4,7 +4,7 @@ part: 10
 chapter: 3
 status: v3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 10.3 Alpha Gap Report —— 用自然语言给缺口分类,由人排定优先级

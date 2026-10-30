@@ -4,7 +4,7 @@ part: 7
 chapter: 1
 status: v3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ip_check: done
 ---
 

@@ -5,7 +5,7 @@ chapter: 12
 status: v3
 version: v3
 written: 2026-05-24
-author: 李旼洙
+author: 李旼洙, 赵智熙
 ip_check: done
 ---
 

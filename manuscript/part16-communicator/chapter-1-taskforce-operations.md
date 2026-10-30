@@ -3,7 +3,7 @@ title: "16.1 战斗 TF 运营 —— 在隔离的工作空间里,只让决策进
 part: 16
 chapter: 1
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 16.1 战斗 TF 运营 —— 在隔离的工作空间里,只让决策进入正本

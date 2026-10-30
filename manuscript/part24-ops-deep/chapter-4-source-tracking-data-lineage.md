@@ -4,7 +4,7 @@ part: 24
 chapter: 4
 status: v3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 24.4 来源追踪·data lineage

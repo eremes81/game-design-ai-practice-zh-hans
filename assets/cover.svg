@@ -285,7 +285,7 @@
   <rect x="0" y="1370" width="1000" height="130" fill="#0a2b30" opacity="0.85"/>
 
   <!-- footer (좌하단 스택 — 하단 중앙우측 x≈44~70%는 부크크 BOOKK 스탬프 자리라 비움, 실측 2026-06-10) -->
-  <text x="120" y="1404" font-size="30" font-weight="600" fill="#e2e8f0">李旼洙</text>
+  <text x="120" y="1404" font-size="30" font-weight="600" fill="#e2e8f0">李旼洙 · 赵智熙</text>
   <text x="120" y="1446" font-family="Consolas,Menlo,monospace" font-size="17" letter-spacing="1.2" fill="#7dd3fc">DESIGN DIRECTOR · 24Y · 2026</text>
 
   <!-- 고미 & 꽁지 — synthwave 도로 위 마스코트 -->

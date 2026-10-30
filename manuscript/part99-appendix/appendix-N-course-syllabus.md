@@ -3,7 +3,7 @@ title: "附录 N. 教学用 15 周进度表·难度指南"
 appendix: N
 status: v3
 written: 2026-06-06
-author: 이민수
+author: 이민수, 조지희
 version: v3
 ---
 

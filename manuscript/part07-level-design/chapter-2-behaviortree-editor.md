@@ -4,7 +4,7 @@ part: 7
 chapter: 2
 status: v3
 version: v3
-author: 李旼洙
+author: 李旼洙, 赵智熙
 ip_check: done
 ---
 

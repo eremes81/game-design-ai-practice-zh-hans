@@ -3,7 +3,7 @@ title: "16.2 与其他工种的协作 —— 把外部请求分入三条轨道�
 part: 16
 chapter: 2
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 16.2 与其他工种的协作 —— 把外部请求分入三条轨道（3-track）

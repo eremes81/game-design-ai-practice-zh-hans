@@ -2,7 +2,7 @@
 title: "10.1 一致性校验 atom —— 守护 30 张表 FK 的 cascade"
 part: 10
 chapter: 1
-author: 이민수
+author: 이민수, 조지희
 status: v3
 version: v3
 ---

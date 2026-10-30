@@ -5,7 +5,7 @@ chapter: 3
 status: v3
 written: 2026-05-24
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ip_check: done
 ---
 

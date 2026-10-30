@@ -3,7 +3,7 @@ title: "16.3 一个决定,三种包装 —— 按职能包装产出物的 framin
 part: 16
 chapter: 3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 16.3 一个决定,三种包装 —— 按职能包装产出物的 framing

@@ -4,7 +4,7 @@ part: 24
 chapter: 1
 status: v3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 24.1 验证系统 —— 用代码揪出一致性、链接与 stale 问题

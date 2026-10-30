@@ -4,7 +4,7 @@ part: 10
 chapter: 2
 status: v3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 10.2 决策验证 3-layer 传感器 —— 人工评审证据的位置

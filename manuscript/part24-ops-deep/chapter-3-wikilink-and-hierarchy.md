@@ -4,7 +4,7 @@ part: 24
 chapter: 3
 status: v3
 version: v3
-author: 이민수
+author: 이민수, 조지희
 ---
 
 # 24.3 Wikilink 与文档层级 —— 连接与分类,检索的两个入口

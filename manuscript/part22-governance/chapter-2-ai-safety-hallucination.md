@@ -4,7 +4,7 @@ part: 22
 chapter: 2
 status: v3
 written: 2026-05-24
-author: 이민수
+author: 이민수, 조지희
 ip_check: done
 version: v3
 ---
