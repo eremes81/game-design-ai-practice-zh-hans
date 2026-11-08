@@ -14,17 +14,17 @@
 📢 The author's second book, 『직장인을 위한 AI 업무 설계의 기술』 (Hanbit Media, Korean) — the author interview is out (in Korean) → https://www.youtube.com/watch?v=v8ygfpAAVQM
 
 > 🧰 **配套工具 — [Harness Starter Kit（骨架工具包）](https://github.com/eremes81/harness-starter-kit)**
-> 把本书 1.3（记忆·权限·设置）、第21部分（自我改进）、第24部分（运营）中搭建的**记忆、钩子与复盘结构**打包成可直接运行的最小构成，下载整个文件夹用 AI 代理打开即可。
+> 把本书 1.3（记忆·权限·设置）、第21部分（自我改进）、第24部分（文档与工作流维护）中搭建的**记忆、钩子与复盘结构**打包成可直接运行的最小构成，下载整个文件夹用 AI 代理打开即可。
 > 它原本是作者另一本书（面向一般职场）的附录，但骨架与这里讲的是同一套。MIT 许可。
 
 
 <img src="assets/cover.svg" alt="封面" width="320">
 
-这是一位在游戏行业深耕 24 年的策划总监所写的实战手册，讲的是如何把生成式 AI（Claude Code）真正带进**每天的制作工作**。不是理论，也不是预测——它一次只推进一项任务，从最初的那块屏幕（安装、账号、计费）开始，一路走过系统设计、战斗、叙事、关卡设计、数值平衡、UX，直到长期运营，再到把会议记录变成决策、用验证关卡守住质量、成本管理与版权。
+这是一位在游戏行业深耕 24 年的策划总监所写的实战手册，讲的是如何把生成式 AI（Claude Code）真正带进**每天的制作工作**。不是理论，也不是预测——它一次只推进一项任务，从最初的那块屏幕（安装、账号、计费）开始，一路走过系统设计、战斗、叙事、关卡设计、数值平衡、UX，直到长期运营，再到把会议记录变成决策、用验证检查点守住质量、成本管理与版权。
 
 副标题——**「没有一个数字是编造的」**——是这本书的承诺。正文里的每一个数字、每一个案例都来自真实的工作，而不是编造的示例；而且大部分代码仅凭 Python 标准库就能原样跑起来。
 
-这本书也向游戏之外的读者敞开。把会议记录变成决策、追溯一个决策的涟漪、用验证关卡守住质量——这些工作流与你的职业无关都成立。每章的「游戏之外的应用」方框就是那座桥，而每章也都带有一节写给独自一人、没有团队者的「单人精简版」。
+这本书也向游戏之外的读者敞开。把会议记录变成决策、追溯一个决策的涟漪、用验证检查点守住质量——这些工作流与你的职业无关都成立。每章的「游戏之外的应用」方框就是那座桥，而每章也都带有一节写给独自一人、没有团队者的「单人精简版」。
 
 ---
 
@@ -44,6 +44,65 @@
 - **[1.0 开始之前 —— 安装、账号、计费与终端生存包](manuscript/part01-foundation/chapter-0-setup-survival-kit.md)** —— 从最初的那块屏幕跟着走
 - 图表以 ` ```mermaid ` 代码块书写，**在 GitHub 上原生渲染**。点开下面任意一章即可阅读。
 
+## 阅读指南：用七个阶段理解全书
+
+本书正文分为 **24 个部分，共 85 个章节条目**，另有附录 A–N 和后记。下面的七个阅读阶段是帮助你理解全书结构的导读，不替代正式目录，也不改变原有章节编号。
+
+本书的主线是：**用 Claude Code、结构化文档和验证流程，把游戏策划中的设计、内容制作、协作与维护连接起来。AI 辅助生成和分析，代码检查明确的规则，人负责目标、判断与最终确认。**
+
+### 阶段一：准备工具，建立文档基础
+**对应第1–2部分：基础、信息架构。**
+
+先完成安装、账号与终端设置，理解模型、token、记忆和权限。再学习如何用 YAML 元数据、单文档单决策的文档原子（Atom）、分层（Layer）和文档关系图，组织可检索、可关联、可检查的策划资料。
+
+阅读重点：1.0–1.3、2.1–2.4。先弄清楚“资料放在哪里、规则如何表达、决策如何关联”，不必一次掌握全部实现细节。
+
+### 阶段二：把设计意图转化为系统、战斗与叙事方案
+**对应第3–5部分：系统设计、战斗设计、叙事。**
+
+学习先定义数据结构（Schema）再填写数据，用关系图表达依赖，并让 AI 在明确约束下辅助设计。战斗部分关注手感参数、连招、取消、输入队列及模拟验证；叙事部分关注世界观、角色、任务与台词的一致性。
+
+阅读重点：3.2、4.2–4.4、5.2–5.4。区分“AI 提出的候选方案”“能够自动检查的规则”和“必须由人判断的体验”。
+
+### 阶段三：组织内容生产与关卡设计
+**对应第6–7部分：内容设计、关卡设计。**
+
+结合程序化规则与 AI 生成，组织城市内容、NPC 设定、小队和任务的生产流程，再阅读程序化关卡设计、行为树编辑与验证、关卡模式库等案例。
+
+阅读重点：6.2–6.4、7.1–7.3。城市生成案例主要涉及内容文本与结构数据；理解每一步实际产出什么、检查什么，以及何时需要人工审核。
+
+### 阶段四：验证平衡、交互与质量，并衔接美术制作
+**对应第8–12部分：数值平衡、UX/UI、QA、角色·宠物·坐骑、美术。**
+
+通过战斗与经济模拟检查数值设计，通过 HUD 和按钮布局案例理解界面验证，再把数据一致性、决策验证、命名规范、技能与美术映射接入制作流程。
+
+阅读重点：第8部分的模拟与平衡案例、第9–10部分的检查流程，以及11.1、12.1–12.3。关注“生成之后如何验收”，以及策划产出如何交给其他岗位继续使用。
+
+### 阶段五：结合数据、平台约束与玩家反馈持续调整
+**对应第13–15部分：数据与 KPI、移动端、长期运营（Live Ops）。**
+
+学习整理开放式反馈、定义和追踪指标，再结合移动端界面、平台差异与输入方式调整方案。活动、赛季和玩家反馈案例展示上线后如何持续更新内容。
+
+阅读重点：13.1–13.3、14.1–14.3、15.1–15.3。AI 可以归类反馈、提出假设和生成候选方案；指标定义、优先级与最终决策仍需人工负责。
+
+### 阶段六：把沟通与会议转化为可追踪的团队决策
+**对应第16–20部分：沟通与跨岗位协作、会议记录、决策与影响、主管与团队领导、团队协作。**
+
+从跨岗位协作开始，把会议记录中的决定提取出来，追踪修改带来的影响，再用团队记忆、策划门户与 MCP 连接协作工具和文档。
+
+阅读重点：17.2–17.4、18.1–18.4、20.1–20.4；需要推动团队采用 AI 时，再重点阅读第19部分。关注“谁作出决定、依据是什么、影响到哪里、后续由谁处理”。
+
+### 阶段七：通过复盘、治理与维护让工作流持续改进
+**对应第21–24部分：自我改进、治理、扩展与未来、文档与 AI 工作流的运行维护。**
+
+把复盘发现整理成可复用的规则与知识，建立提示词、AI 幻觉检查、成本和版权管理流程，再按需了解 Agent 扩展、工具取舍与独立游戏开发案例。最后学习文档校验、图表生成、链接维护和数据来源追踪。
+
+阅读重点：第21部分、22.1–22.4、24.1–24.4。第23部分可按需要选读。第24部分主要讲文档与 AI 工作流的维护，不同于第15部分的游戏上线运营。
+
+**如何开始：**先读阶段一，再选择与你当前任务最相关的阶段。每次选一个案例，跟完“输入—生成—检查—人工确认”的完整过程。涉及权限、费用或对外使用产出时，可提前查阅第22部分。
+
+**附录按需查阅：**术语见附录 J，权限设置见 C，文档规范见 D，脚本案例见 G，跨模型迁移见 K，团队导入成本见 L，教学进度与难度指南见 N。其余附录可通过完整目录查找。
+
 ## 韩语纸质原版
 
 | | |
@@ -60,7 +119,7 @@
 
 ## 完整目录
 
-> **24 部分 + 附录 A–N + 后记 · 100 章。** 附录在 [`manuscript/part99-appendix/`](manuscript/part99-appendix)，版权页在 [`manuscript/_colophon.md`](manuscript/_colophon.md)。
+> **正文分为24个部分，共85个章节条目；另含附录A–N及后记，目录合计100个条目。** 附录在 [`manuscript/part99-appendix/`](manuscript/part99-appendix)，版权页在 [`manuscript/_colophon.md`](manuscript/_colophon.md)。
 
 ### 第1部分 · 基础
 
@@ -72,21 +131,21 @@
 ### 第2部分 · 信息架构
 
 - [2.1 YAML 前置元数据 —— 让所有文档成为数据](manuscript/part02-info-architecture/chapter-4-yaml-frontmatter.md)
-- [2.2 按页 Atom —— 单文档单决策的解剖](manuscript/part02-info-architecture/chapter-5-page-atom.md)
+- [2.2 文档原子（Atom）—— 一份文档承载一个决策](manuscript/part02-info-architecture/chapter-5-page-atom.md)
 - [2.3 Layer 设计 —— 游戏系统抽象化](manuscript/part02-info-architecture/chapter-6-layer-design.md)
-- [2.4 本体与 wikilink 图谱 —— 验证语义箭头](manuscript/part02-info-architecture/chapter-7-ontology-graph.md)
+- [2.4 本体与 wikilink 关系图——检查文档间的语义关系](manuscript/part02-info-architecture/chapter-7-ontology-graph.md)
 
 ### 第3部分 · 系统设计
 
 - [3.1 系统策划的日常与 Layer 坐标](manuscript/part03-system-design/chapter-09-system-designer-and-layer.md)
-- [3.2 模式优先 —— $模式比数据更先行](manuscript/part03-system-design/chapter-10-schema-first.md)
+- [3.2 Schema 优先——先定义数据结构，再填写数据](manuscript/part03-system-design/chapter-10-schema-first.md)
 - [3.3 关系图可视化 —— 用眼睛看清依赖关系](manuscript/part03-system-design/chapter-11-relation-map.md)
 - [3.4 AI 辅助系统设计的提示词模式](manuscript/part03-system-design/chapter-12-ai-assist-prompt-patterns.md)
 
 ### 第4部分 · 战斗设计
 
 - [4.1 战斗策划与 Layer —— 打击感落在哪一格](manuscript/part04-combat-design/chapter-13-combat-designer-and-layer.md)
-- [4.2 战斗 Look & Feel —— 把手感转化为数值的环节](manuscript/part04-combat-design/chapter-14-look-and-feel.md)
+- [4.2 战斗表现与手感（Look & Feel）——将可测量的体验要素转化为设计参数](manuscript/part04-combat-design/chapter-14-look-and-feel.md)
 - [4.3 连招·取消·输入队列 —— 枚举路径并加以验证](manuscript/part04-combat-design/chapter-15-combo-cancel-input.md)
 - [4.4 AI 辅助战斗模拟与验证](manuscript/part04-combat-design/chapter-16-ai-combat-simulation.md)
 
@@ -95,7 +154,7 @@
 - [5.1 NarrativeDocs Layer 0\~4 结构](manuscript/part05-narrative-design/chapter-1-narrative-docs-layers.md)
 - [5.2 世界观 → 角色 → 任务 的一致性验证](manuscript/part05-narrative-design/chapter-2-consistency-verification.md)
 - [5.3 AI 辅助叙事写作](manuscript/part05-narrative-design/chapter-3-ai-assisted-narrative.md)
-- [5.4 台词·语音一致性](manuscript/part05-narrative-design/chapter-4-dialogue-voice-consistency.md)
+- [5.4 台词与角色口吻的一致性——从文本审核到配音制作](manuscript/part05-narrative-design/chapter-4-dialogue-voice-consistency.md)
 
 ### 第6部分 · 内容设计
 
@@ -120,13 +179,13 @@
 
 ### 第9部分 · UX/UI
 
-- [9.1 把 HUD 截图挂到 lint 上 —— 让 AI 抓出视线偏离与对比度不足的地方](manuscript/part09-ux-ui-design/chapter-1-hud-layout.md)
+- [9.1 用 lint 检查 HUD 截图——识别视线偏移与对比度不足](manuscript/part09-ux-ui-design/chapter-1-hud-layout.md)
 - [9.2 技能按钮排布 —— AI 生成 3 个布局方案,lint 负责淘汰](manuscript/part09-ux-ui-design/chapter-2-skill-ui-button-column.md)
 - [9.3 ArtGuide/06_UI 协作 —— 策划用 md 写，美术团队只看 html](manuscript/part09-ux-ui-design/chapter-3-artguide-ui-collaboration.md)
 
 ### 第10部分 · QA
 
-- [10.1 一致性校验 atom —— 守护 30 张表 FK 的 cascade](manuscript/part10-qa-design/chapter-1-integrity-check-atoms.md)
+- [10.1 数据完整性校验 Atom——通过级联检查维护30张数据表的外键（FK）关系](manuscript/part10-qa-design/chapter-1-integrity-check-atoms.md)
 - [10.2 决策验证 3-layer 传感器 —— 人工评审证据的位置](manuscript/part10-qa-design/chapter-2-decision-validation-3-layer.md)
 - [10.3 Alpha Gap Report —— 用自然语言给缺口分类,由人排定优先级](manuscript/part10-qa-design/chapter-3-alpha-gap-report.md)
 
@@ -137,7 +196,7 @@
 
 ### 第12部分 · 美术
 
-- [12.1 AI 美术资产管线 —— 在可逆阶段量产，在不可逆关卡前停下](manuscript/part12-art-direction/chapter-1-ai-art-asset-pipeline.md)
+- [12.1 AI 美术资产流程——在可回退阶段批量生成，在不可逆操作前审核确认](manuscript/part12-art-direction/chapter-1-ai-art-asset-pipeline.md)
 - [12.2 ArtGuide 七大领域(角色·动画·怪物·NPC·VFX·UI·环境)](manuscript/part12-art-direction/chapter-2-artguide-7-areas.md)
 - [12.3 规格书 → 概念 → 游戏内资产的流转](manuscript/part12-art-direction/chapter-3-spec-to-asset-flow.md)
 
@@ -159,17 +218,17 @@
 - [15.2 活动·赛季运营 —— 一张模板生成 10 个变体候选,评审只由人来做](manuscript/part15-live-ops/chapter-2-event-season-ops.md)
 - [15.3 把100条反馈归为主题——聚类交给LLM,优先级交给人](manuscript/part15-live-ops/chapter-3-user-feedback-cycle.md)
 
-### 第16部分 · 沟通者
+### 第16部分 · 沟通与跨岗位协作
 
 - [16.1 战斗 TF 运营 —— 在隔离的工作空间里,只让决策进入正本](manuscript/part16-communicator/chapter-1-taskforce-operations.md)
 - [16.2 与其他工种的协作 —— 把外部请求分入三条轨道（3-track）](manuscript/part16-communicator/chapter-2-cross-job-collaboration.md)
-- [16.3 一个决定,三种包装 —— 按职能包装产出物的 framing](manuscript/part16-communicator/chapter-3-cross-team-artifact-framing.md)
+- [16.3 同一决策，三种表达——面向不同岗位组织交付内容](manuscript/part16-communicator/chapter-3-cross-team-artifact-framing.md)
 
 ### 第17部分 · 会议记录
 
 - [17.1 会议记录为何是最大的痛点](manuscript/part17-meeting-notes/chapter-1-concept-and-motivation.md)
 - [17.2 从会议纪要中挖掘决策的提取管线](manuscript/part17-meeting-notes/chapter-2-extraction-pipeline.md)
-- [17.3 会议分类·图注·同步 —— 让会议记录成为资产的三条主轴](manuscript/part17-meeting-notes/chapter-3-categories-and-sync.md)
+- [17.3 会议分类、图片说明与同步 —— 让会议记录成为资产的三条主轴](manuscript/part17-meeting-notes/chapter-3-categories-and-sync.md)
 - [17.4 把会议记录变成决策数据库 —— AI 自动化的 5 个切入点](manuscript/part17-meeting-notes/chapter-4-ai-meeting-automation.md)
 
 ### 第18部分 · 决策与影响
@@ -183,7 +242,7 @@
 
 - [19.1 把愿景用作决策的评分表 —— 将 decisions/ 中的 26 个决策交给 LLM 检验](manuscript/part19-team-lead/chapter-1-vision-and-delegation.md)
 - [19.2 对冲突分类,不让会议中的决策流失——会议领导力的 AI 辅助](manuscript/part19-team-lead/chapter-2-conflict-and-meeting-leadership.md)
-- [19.3 AI引入战略与说服管理层——从保守到激进,ROI 绝不加工](manuscript/part19-team-lead/chapter-3-ai-adoption-strategy.md)
+- [19.3 AI 引入策略与管理层沟通——从稳妥应用到进阶实践，如实呈现投资回报（ROI）](manuscript/part19-team-lead/chapter-3-ai-adoption-strategy.md)
 
 ### 第20部分 · 团队协作
 
@@ -194,27 +253,27 @@
 
 ### 第21部分 · 自我改进
 
-- [Part 21 · 第1章 复盘是一切的起点](manuscript/part21-self-improving/chapter-1-retro-as-origin.md)
-- [Part 21 · 第2章. 复盘系统与 atom 晋升 —— 让发现成为永久资产](manuscript/part21-self-improving/chapter-2-retro-system-atom-promotion.md)
-- [Part 21 · 第3章. 闭合 self-improving 循环](manuscript/part21-self-improving/chapter-3-closing-the-loop.md)
+- [21.1 复盘是一切的起点](manuscript/part21-self-improving/chapter-1-retro-as-origin.md)
+- [21.2 复盘系统与 Atom 转化——将发现沉淀为可复用的知识资产](manuscript/part21-self-improving/chapter-2-retro-system-atom-promotion.md)
+- [21.3 闭合 self-improving 循环](manuscript/part21-self-improving/chapter-3-closing-the-loop.md)
 
 ### 第22部分 · 治理
 
 - [22.1 提示词工程 —— 游戏策划的一页作业指示书](manuscript/part22-governance/chapter-1-prompt-engineering.md)
-- [22.2 自信地说谎的同事 —— 用验证关卡拦住幻觉](manuscript/part22-governance/chapter-2-ai-safety-hallucination.md)
+- [22.2 自信地说谎的同事 —— 用验证检查点拦住幻觉](manuscript/part22-governance/chapter-2-ai-safety-hallucination.md)
 - [22.3 AI 成本管理 —— 用代码守住 token 预算](manuscript/part22-governance/chapter-3-ai-cost-management.md)
 - [22.4 著作权与伦理 —— 用一套流程闭合产出物的权利、标示与共识](manuscript/part22-governance/chapter-4-copyright-ethics.md)
 
 ### 第23部分 · 扩展与未来
 
-- [Part 23 · 第1章. Wrapper·Cascade·Junction 模式](manuscript/part23-extension/chapter-1-wrapper-cascade-junction.md)
-- [Part 23 · 第2章 Hermes Agent 引入实录](manuscript/part23-extension/chapter-2-hermes-agent.md)
-- [Part 23 · 第3章. 工具策展 —— 用数据裁掉不用的工具](manuscript/part23-extension/chapter-3-tool-curation.md)
-- [Part 23 · 第4章. 独自开发的益智游戏 —— Critter Sort 实战记](manuscript/part23-extension/chapter-4-personal-game-dev.md)
+- [23.1 Wrapper·Cascade·Junction 模式](manuscript/part23-extension/chapter-1-wrapper-cascade-junction.md)
+- [23.2 Hermes Agent 引入实录](manuscript/part23-extension/chapter-2-hermes-agent.md)
+- [23.3 工具策展 —— 用数据裁掉不用的工具](manuscript/part23-extension/chapter-3-tool-curation.md)
+- [23.4 独自开发的益智游戏 —— Critter Sort 实战记](manuscript/part23-extension/chapter-4-personal-game-dev.md)
 
-### 第24部分 · 运营实战
+### 第24部分 · 文档与 AI 工作流的运行维护
 
-- [24.1 验证系统 —— 用代码揪出一致性、链接与 stale 问题](manuscript/part24-ops-deep/chapter-1-verification-system.md)
+- [24.1 验证系统——用代码检查一致性、失效链接与过期内容](manuscript/part24-ops-deep/chapter-1-verification-system.md)
 - [24.2 Mermaid 图表自动化 —— 让文档自己画出自己的图](manuscript/part24-ops-deep/chapter-2-mermaid-diagram-automation.md)
 - [24.3 Wikilink 与文档层级 —— 连接与分类,检索的两个入口](manuscript/part24-ops-deep/chapter-3-wikilink-and-hierarchy.md)
 - [24.4 来源追踪·data lineage](manuscript/part24-ops-deep/chapter-4-source-tracking-data-lineage.md)
